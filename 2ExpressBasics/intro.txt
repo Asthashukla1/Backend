@@ -1,0 +1,13 @@
+diff between framework and lib 
+framework gives you a flow
+lib gives you tools 
+react is a lib 
+express, angular is a framework
+
+middle ware-
+req ko route k pas pohochne se pehle gar beech m roke to ye middleware kehte hn
+user-> req -> middleware -> route-> server ->response
+
+
+to handle error - there is default error handler function in express.com
+this is written to maintain the streak
