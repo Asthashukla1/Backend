@@ -26,6 +26,7 @@
         <div class="task-card bg-zinc-800 p-4 rounded-lg shadow-md border border-zinc-700">
           <h2 class="text-xl font-semibold mb-1"><%= val %></h2>
           <a class="text-blue-500 inline-block mt-3" href="/file/<%=val%>">Read more</a>
+          <a class="text-blue-500 inline-block mt-3" href="/edit/<%= val %>">Edit</a>
         </div>
       <% }); %>
     <% } else { %>
