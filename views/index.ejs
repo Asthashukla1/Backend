@@ -10,6 +10,19 @@
 </head>
 <body class="bg-zinc-900 text-white min-h-screen flex flex-col p-8">
 
+  <!-- Auth Header -->
+  <div class="flex justify-end items-center mb-4 text-sm">
+    <% if (user) { %>
+      <p class="text-zinc-300">
+        Welcome, <span class="text-pink-400 font-semibold"><%= user %></span> |
+        <a href="/logout" class="text-blue-400 hover:underline">Logout</a>
+      </p>
+    <% } else { %>
+      <a href="/login" class="text-blue-400 hover:underline mr-4">Login</a>
+      <a href="/signup" class="text-pink-400 hover:underline">Sign Up</a>
+    <% } %>
+  </div>
+
   <h1 class="text-4xl font-bold mb-8 text-center text-pink-400">Task Manager</h1>
 
   <!-- Two Column Layout -->
